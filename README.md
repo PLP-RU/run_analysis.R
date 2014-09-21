@@ -6,7 +6,7 @@ run_analysis.R
 This repo contains R script which can process this source data:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-Source data description: 
+Source data description:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 You can find information about the data in `CodeBook.md`.
