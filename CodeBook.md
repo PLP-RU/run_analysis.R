@@ -1,7 +1,6 @@
-# run_analysis.R - Code Book
-===============================
+##run_analysis.R - Code Book
 
-## Source Data Info:
+###Source Data Info:
 
 Info from the source data CodeBook, 
 
@@ -41,7 +40,7 @@ Info from the source data CodeBook,
 
 
 ===============================
-##Data processing description:
+###Data processing description:
 
 Main process steps of run_analysis.R script are:
 
