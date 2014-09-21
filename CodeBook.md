@@ -1,9 +1,9 @@
-# Assessment 1 - Code Book
+# run_analysis.R - Code Book
 ===============================
 
 ## Source Data Info:
 
-Info from the source data book, 
+Info from the source data CodeBook, 
 
 > The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 > 
@@ -41,6 +41,16 @@ Info from the source data book,
 
 
 ===============================
-##The Transformations:
+##Data processing description:
 
-First, training and testing data sets are merged to create a single `combined` data set. After, this data set is further culled to only include data pertaining to mean or standard deviation values (denoted by the presence of `mean` or `std` in the feature names).
+Main process steps of run_analysis.R script are:
+
+1. Downloads the training and test data sets.
+2. Loads the data sets.
+3. Merges the training and the test sets to create one data set.
+4. Extracts only the measurements on the mean and standard deviation for each measurement.
+5. Uses descriptive activity names to name the activities in the data set.
+6. Appropriately labels the data set with descriptive activity names.
+7. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+First, training and testing data sets are merged to create a single data set. After, this data set is further culled to only include data pertaining to mean or standard deviation values. Added the descriptive activity names column to this data set and labelled the descriptive activity names according to 'activity_labels.txt'. Finally, added the subject column to this data set and calcaluted the average of each variable for each activity and each subject. Result saved to a text file.
